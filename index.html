@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/portfolio.png" />
     <title>Portfolio | Katarina Stojanovic</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
-
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-         <a href="#portfolio">Portfolio</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -26,17 +29,27 @@
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Katarina Stojanovic</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <h3>And I'm a <span class="text"></span></h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          aspernatur pariatur esse placeat rerum animi reiciendis perferendis?
+          As a dedicated programmer, I possess an inquisitive nature and a
+          passion for innovation, always on the lookout for opportunities to
+          deliver meaningful solutions in the ever-evolving digital landscape.
         </p>
         <div class="social-media">
-          <a href="https://www.instagram.com/_stojanovic_katarina_/"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.facebook.com/katarina.stojanovic.kaca/"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/katarina-stojanovi%C4%87-826372222/"><i class="bx bxl-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/katarina-stojanovi%C4%87-826372222/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/katarina.stojanovic.kaca/"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/_stojanovic_katarina_/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
         </div>
-        <a href="images/CV Katarina Stojanoić.pdf" class="btn">Download CV</a>
+        <a href="images/CV Katarina Stojanoić.pdf" class="btn-box"
+          >More About Me</a
+        >
       </div>
       <div>
         <object data="me.svg" width="600" height="600"></object>
@@ -45,79 +58,210 @@
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/123.svg" alt="Abut me" />
+        <img src="images/123.svg" alt="Abut Me" />
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
+        <h4>Test Engineer and Frontend Developer</h4>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          suscipit doloremque velit ullam maiores. Temporibus non culpa error
-          unde dignissimos aliquid nihil, aspernatur placeat recusandae rem
-          vitae nulla, saepe voluptates!
+          I am a web developer and tester with a Bachelor's Degree in
+          Information Technology from the Faculty of Information Technology. Due
+          to my passion for photography, I have developed a keen eye for visuals
+          and an innate sense of what is visually appealing. I utilize these
+          skills in the creation of user-friendly interfaces. My creative side
+          enables me to infuse digital designs with a sense of aesthetics,
+          providing an added advantage for my clients. I am currently employed
+          at Vega IT as a software tester, where my responsibilities involve
+          ensuring the quality and functionality of software. Before my testing
+          role, I worked as a Mendix developer for over a year on a commercial
+          project, necessitating daily communication with team members and
+          clients. Upon completing my degree, I freelanced and developed an
+          application for a university. My work primarily focused on the
+          front-end side of the application. During a four-month internship, I
+          was introduced to software testing for the first time, gaining
+          experience in manual testing. My ambition is to further advance my
+          skills as a software tester. I am particularly keen on learning and
+          implementing software automation techniques to streamline the testing
+          process, ultimately enhancing the quality of software products.
         </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="#" class="btn-box">More About Me</a>
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/company.jpg" alt="app" />
-          <div class="portfolio-layer">
-            <h4>APPLICATION FOR TRANSFER OF STUDENTS FROM OTHER FACULTY</h4>
+    <section>
+      <div class="projects" id="projects">
+        <div class="container">
+          <h1 class="sub-title">My <span>Projects</span></h1>
+          <div class="projects-list">
+            <div>
+              <img src="images/education.png" alt="app" />
+              <h2>APPLICATION FOR TRANSFER OF STUDENTS FROM OTHER FACULTY</h2>
+              <p>
+                This application makes communication between University
+                employees easier. The application's users are members of the
+                commission and members of the marketing department. Marketing
+                services create a new request, enter the student’s data, and
+                finally forward it to the commission that decides about the
+                status of the student and creates the curriculum for that
+                student. The application allows users to view the request's
+                status, which changes depending on the commission's decisions.
+                The technical aspect of this application is automation,
+                providing a good user interface and an overview of all potential
+                students
+              </p>
+            </div>
+
+            <div>
+              <img src="images/business.png" alt="app" />
+              <h2>BUSINESS TRAVEL PLATFORM</h2>
+              <p>
+                The project goal involved creating a new portal that provided
+                companies with insights into their employees' travel data and
+                allowed ease of travel-related payments. The platform also
+                features a CO2 emissions tracking functionality. It is designed
+                to handle heavy workloads, is easily maintainable, and can be
+                expanded as needed. Each company has a branded design, and the
+                portal was adapted for multiple countries, customizing language,
+                currency, and documents. The front-end was developed using
+                Mendix and CSS. The main goal of developing Mendix involves data
+                retrieval from APIs and display through Mendix widgets.
+              </p>
+            </div>
+
+            <div>
+              <img src="images/food.png" alt="app" />
+              <h2>ORDER FOOD</h2>
+              <p>
+                The application serves as a platform for users and
+                providers, offering a streamlined food ordering and management
+
+                process. User Profiles: The application caters to two primary
+                user groups: employees and food providers. Employees have
+                individual profiles, granting them the ability to browse the
+                menu and place orders. Provider Functions: Food providers, on
+                the other hand, have more extensive privileges. They can add,
+                modify, or remove food items from the menu, track daily orders
+                placed by employees, and view comments and ratings left by
+                users. This project requires rigorous testing to ensure a
+                seamless user experience for both employees and providers. My
+                role as a manual tester involves meticulously examining the
+                application's functionality, assessing user interfaces, and
+                verifying that all features, such as order placement, menu
+                management, and user feedback, operate smoothly and effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="skills" id="skills">
+        <div class="container">
+          <h1 class="sub-title">My <span>Skills</span></h1>
+          <div class="projects-skills">
+            <div><i class='bx bxl-html5'></i>
+              <h2>HTML</h2>
+                <p>
+                  I possess a strong proficiency in HTML, with the ability to create and manipulate web content effectively.
+                </p>
+            </div>
+
+            <div><i class='bx bxl-html5'></i>
+              <h2>CSS</h2>
+                <p>
+                  I have a solid grasp of CSS, enabling me to design and style web elements to enhance user experiences.
+                </p>
+            </div>
+
+           <div> <i class='bx bxl-javascript' ></i>
+              <h2>JavaScript</h2>
+                <p>
+                  I also have a basic understanding of JavaScript, allowing me to add interactive elements and improve website functionality.
+                </p>
+            </div>
+            <div><i class='bx bx-test-tube' ></i>
+              <h2>Manual testing</h2>
+                <p>
+                  I am experienced in manual testing, which involves identifying and documenting software defects through systematic testing procedures. This skill enables me to ensure the quality and reliability of software applications.
+                </p>
+            </div>
+
+          
+
+         <div><i class='bx bxl-github'></i>
+              <h2>GitHub</h2>
+                <p>
+                  I use it to manage and share my code repositories, enabling efficient teamwork and code tracking in my projects.
+                </p>
+            </div>
+
+          <div><i class='bx bxl-javascript' ></i>
+              <h2>Cypress</h2>
+                <p>
+                  My skill in using Cypress enables me to perform automated tests that verify the functionality of web projects, resulting in elevated software quality and more streamlined development practices.
+                </p>
+          </div>
+        
+         <div><i class='bx bxs-user-rectangle'></i>
+            <h2>Mendix</h2>
+              <p>
+                I highlight my proficiency in Mendix, a low-code development platform. I leverage Mendix to create web applications efficiently, reducing development time and enhancing the speed at which I can deliver robust and user-friendly software solutions.
+              </p>
+        </div>
+
+        <div><i class='bx bxl-java'></i>
+          <h2>Java</h2>
             <p>
-              This application makes communication between University employees
-              easier. The application's users are members of the commission and
-              members of the marketing department. Marketing services create a
-              new request, enter the student’s data, and finally forward it to
-              the commission that decides about the status of the student and
-              creates the curriculum for that student. The application allows
-              users to view the request's status, which changes depending on the
-              commission's decisions. The technical aspect of this application
-              is automation, providing a good user interface and an overview of
-              all potential students
+              With a grasp of Java, I am skilled at developing software applications, including web and desktop applications, and I use this language to build versatile and reliable solutions for a wide range of projects.
             </p>
-          </div>
-        </div>
+      </div>
+     <div> <i class='bx bxs-file-json'></i>
+              <h2>Postam</h2>
+                <p>
+                  I emphasize my proficiency in Postman, an essential tool for API testing and development. With Postman, I create and execute API requests, test endpoints, and streamline the development process.
+                </p>
+            </div>
 
-        <div class="portfolio-box">
-          <img src="images/company_small.jpg" alt="app" />
-          <div class="portfolio-layer">
-            <h4>Company-Presentation</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="https://github.com/kaca100janovic/Company-Presentation"><i class="bx bx-link-alt"></i></a></i>
           </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/company_small.jpg" alt="app" />
-          <div class="portfolio-layer">
-            <h4>APPLICATION</h4>
-            <p>Lorem10</p>
-            <i class="bx bx-link-alt"></i>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>ME!</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </form>
+      <h2 class="contact-heading">Contact <span>ME!</span></h2>
+      <h4>Let's work Together</h4>
+      <p>
+        If you are interested in collaboration, please don't hesitate to contact
+        me via the provided <a href="mailto:kaca.katarina.stojanovic@gmail.com">email</a> or through social media. I look forward to our
+        joint efforts in growing and developing together!
+      </p>
+                  
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/katarina-stojanovi%C4%87-826372222/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/katarina.stojanovic.kaca/"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/_stojanovic_katarina_/"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+    </div>
     </section>
-    <script src="js/script.js"></script>
+
+    <div class="footer">
+      <div class="footer-text">
+        <p>Katarina Stojanovic | 2023</p>
+      </div>
+      <div class="footler-iconTop">
+        <a href="#home"></a>
+      </div>
+    </div>
+
+    <script src="js/script.js">
+      <i class='bx bx-up-arrow-alt'></i>
+    </script>
   </body>
 </html>
