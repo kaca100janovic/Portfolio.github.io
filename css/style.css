@@ -210,6 +210,10 @@ body {
   grid-gap: 40px;
   margin-top: 50px;
 }
+
+.projects-list p{
+  text-align: justify;
+}
 .projects-list div{
   background-color: transparent;
   padding: 40px;
@@ -261,6 +265,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 2rem;
+  
 }
 .contact a{
   text-decoration: none;
@@ -322,6 +327,7 @@ body {
 
 .skills .projects-skills p{
   padding: 5px;
+  text-align: justify;
 }
 .skills .projects-skills h2{
   padding: 5px;
@@ -393,3 +399,5 @@ body {
     opacity: 1;
   }
 }
+
+
