@@ -401,3 +401,10 @@ body {
 }
 
 
+@media only screen and (max-width: 766px) {
+  body {
+    color: #ededed;
+  /* background: var(--background); */
+  background-color: red;
+  }
+}
