@@ -258,8 +258,8 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
-  padding-left: 30px;
-  margin-top: 130px;
+  padding: 30px;
+  /* margin-top: 130px; */
 }
 .contact-heading{
   font-size: 48px;
@@ -355,6 +355,17 @@ body {
   width: 35px;
   padding: 5px;
 }
+.icon-title{
+  display: flex;
+  flex-direction: column;
+  
+}
+.icon-title:hover{
+  transform: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  }
+
 
 .footer{
   background: var(--header_color);
@@ -518,8 +529,11 @@ body {
   margin-bottom: 15px;
 
 }
-.projects-list p{
+.projects-list img{
   display: none;
+}
+.projects-list p{
+
 }
 /* project */
 .skills{
@@ -553,6 +567,16 @@ body {
   font-size: 18px;
   grid-area: h2;
 }
+.icon-title{
+  display: flex;
+  flex-direction: row;
+  }
+.icon-title:hover{
+  transform: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  }
+
 
 
 
