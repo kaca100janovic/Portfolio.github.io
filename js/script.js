@@ -1,5 +1,5 @@
 var typed = new Typed(".text", {
-    strings: ["Mendix Developer", "Test Engineer", "Frontend Developer"],
+    strings: ["Mendix Developer", "Quality Assurance Engineer"],
     typeSpeed: 100,
     backSpeed: 100,
     startDelay: 1000,
